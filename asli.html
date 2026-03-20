@@ -1,0 +1,266 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Happy Birthday Sammuu ❤️</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    .gallery img:nth-child(3){
+    grid-column:1 / span 2;
+    justify-self:center;
+    transform:scale(1.05);
+}
+    .gallery {
+    display:grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+/* Default images */
+.gallery img{
+    width:200px;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+}
+
+/* Hover */
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Make 3rd image center */
+.gallery img:nth-child(3){
+    grid-column:1 / span 2;
+    justify-self:center;
+}
+
+/* Mobile */
+@media (max-width:600px){
+    .gallery{
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    .gallery img{
+        width:100%;
+        height:180px;
+    }
+}
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    background:linear-gradient(to right,#ffdde1,#ee9ca7);
+    overflow-x:hidden;
+}
+
+.container{
+    padding:20px;
+}
+
+/* Mobile Optimization */
+@media (max-width:600px){
+    h1{font-size:24px;}
+    p{font-size:14px;}
+    button{font-size:14px; padding:8px 16px;}
+}
+
+/* Hidden */
+.hidden{
+    display:none;
+}
+
+/* Fade Animation */
+.fade-in{
+    opacity:0;
+    transform:translateY(20px);
+    transition:all 0.8s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Button */
+button{
+    padding:10px 20px;
+    font-size:16px;
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* Input */
+input{
+    padding:8px;
+    border-radius:8px;
+    border:none;
+}
+
+/* Hearts */
+.heart{
+    position:fixed;
+    bottom:-10px;
+    font-size:20px;
+    animation:floatUp 5s linear infinite;
+}
+
+@keyframes floatUp{
+    0%{transform:translateY(0);}
+    100%{transform:translateY(-100vh);}
+}
+
+/* Fireworks */
+.firework{
+    position:fixed;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    animation:explode 1s ease-out forwards;
+}
+
+@keyframes explode{
+    0%{transform:scale(1); opacity:1;}
+    100%{transform:scale(8); opacity:0;}
+}
+
+/* Gallery */
+.gallery {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:90%;
+    max-width:200px;
+    height:auto;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container" id="login">
+    <h2>Enter Our Special Date 💖</h2>
+    <input type="password" id="pass">
+    <button onclick="checkPass()">Enter</button>
+</div>
+
+<div class="container hidden fade-in" id="main">
+
+    <h1>Happy Birthday Samuuuuu ❤️</h1>
+
+    <p>Happy birthday to the most beautiful person in my life. You are my best memories, my peace, my everything 💖</p><p>
+Happy birthday to you, the most beautiful person in my life. Thank you so much for being the best and such an important part of my life. You are my last best 7 minutes (it means when people die, they relive their best memories for 7 minutes, and you are my best memories). 
+
+When I saw you for the first time, it felt like I already knew you, like you were always a part of my life. And now you are truly the best part of my daily life. I have never seen a person like you 💖
+</p>
+
+<p>
+Hamesha puchte ho kyu pasand ho, kya dekha mujhme… sach bolu toh tumhari craziness, tumhara alag hona. Tumse milne ke baad aisa feel hua jaise tum mere life ka ek part ho. 
+
+Jitna tumne mere liye risk liya hai, sach me wo efforts main kabhi nahi bhoolunga. Even main hamare future bachhon ko bhi bataunga ki tum mere liye kya ho 🫠  
+
+Aur bhai, I’m really sorry… maine bahut galtiyan ki, aur tumne hamesha maaf kiya. Thank you so much 🫂🥺  
+
+3 saal kaise beet gaye pata hi nahi chala… aur mujhe hope hai tum aise hi mere saath aage bhi rahoge. Main zaroor tumhare layak banunga ❤️
+</p>
+
+<p>
+And again, happy birthday to you… my best, my supporter, my friend, my everything. My every minute life is you ❤️  
+
+Is saal ke memories ke liye bhi thank you so much. Bahut problems aaye, bahut kuch face kiya, but phir bhi hum saath hai… and I know this is true love between us 💖  
+
+Tumhari smile mujhe har baar motivate karti hai. Jab bhi tumhe dekhta hoon, meri saari problems bhool jaata hoon.  
+
+Thank you for everything… and again, happy birthday Sameera, my Samuuuuu 🫠😚🥳
+</p>
+
+    <p>I really do admire how you stay even when I’m impossible 🫂</p>
+
+    <h3>Our Moments 📸</h3>
+
+    <div class="gallery">
+        <img src="C:\Users\SRADHA\OneDrive\Desktop\WT\ghanshyam 1.jpeg">
+        <img src="C:\Users\SRADHA\OneDrive\Desktop\WT\ghanshyam 2.jpeg">
+        <img src="C:\Users\SRADHA\OneDrive\Desktop\WT\ghanshyam.jpeg">
+    </div>
+
+    <br><br>
+
+    <button onclick="alert('Love you meri Samuuuu ❤️ Stay lovely, stay mine.')">
+        Click If You Love Me 💌
+    </button>
+
+</div>
+
+<script>
+
+function checkPass(){
+    var password = document.getElementById("pass").value;
+
+    if(password === "290322"){
+        document.getElementById("login").classList.add("hidden");
+
+        var main = document.getElementById("main");
+        main.classList.remove("hidden");
+
+        setTimeout(function(){
+            main.classList.add("show");
+        },50);
+
+    }else{
+        alert("Wrong password 😝 Try again");
+    }
+}
+
+/* Hearts */
+setInterval(function(){
+    var heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random()*100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(function(){
+        heart.remove();
+    },5000);
+},500);
+
+/* Fireworks */
+setInterval(function(){
+    for(let i=0;i<8;i++){
+        let fw = document.createElement("div");
+        fw.classList.add("firework");
+        fw.style.left = Math.random()*100 + "vw";
+        fw.style.top = Math.random()*80 + "vh";
+        fw.style.background = `hsl(${Math.random()*360},100%,50%)`;
+        document.body.appendChild(fw);
+
+        setTimeout(()=>fw.remove(),1000);
+    }
+},1500);
+
+</script>
+
+</body>
+</html>
